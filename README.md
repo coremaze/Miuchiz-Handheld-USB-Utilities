@@ -15,7 +15,7 @@ These tools do not require additional Python packages. You can download everythi
   
   1) Nagivate to the computer room on the handheld and use the computer. The Miuchiz can connect over USB.
   
-  2) Hold LEFT and MENU while powering on the device. This will put it into PC mode and say "Please Connect to PC" and at that point it can connect over USB
+  2) Hold LEFT and MENU while powering on the device. This will put it into PC mode and it will say "Please Connect to PC" and at that point it can connect over USB
 
 ---
 ---
