@@ -9,6 +9,17 @@ These tools do not require additional Python packages. You can download everythi
 
 ---
 
+### Connecting a Miuchiz to a comnputer
+
+  A Miuchiz can be connected to the computer in two ways:
+  
+  1) Nagivate to the computer room on the handheld and use the computer. The Miuchiz can connect over USB.
+  
+  2) Hold LEFT and MENU while powering on the device. This will put it into PC mode and say "Please Connect to PC" and at that point it can connect over USB
+
+---
+---
+
 #### `HandheldCore.py` contains the `Handheld` class which deals with all low level interactions with the Miuchiz handheld device.
 
 
