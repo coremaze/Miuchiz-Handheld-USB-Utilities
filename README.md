@@ -15,7 +15,7 @@ These tools do not require non-included Python packages. You can download everyt
   
   1) Navigate to the computer room on the handheld and use the computer. The Miuchiz can connect over USB.
   
-  2) Hold LEFT and MENU while powering on the device. This will put it into PC mode and it will say "Please Connect to PC" and at that point it can connect over USB
+  2) Hold LEFT and MENU while powering on the device. This will put it into PC mode and it will say "Please Connect to PC" and at that point it can connect over USB.
 
 ---
 ---
@@ -27,9 +27,9 @@ These tools do not require non-included Python packages. You can download everyt
   
   Method `Handheld.IsHandheld()` determines if the associated drive is a Miuchiz device.
   
-  Method `Handheld.ReadPage(bank, page)` returns a bytes object of length 0x1000 containing the data at some page of the device. Banks range from 0\~1 and pages range from 0\~255
+  Method `Handheld.ReadPage(bank, page)` returns a bytes object of length 0x1000 containing the data at some page of the device. Banks range from 0\~1 and pages range from 0\~255.
   
-  Method `Handheld.WritePage(data, bank, page)` writes a bytes object of length 0x1000 to some page of the device. Banks range from 0\~1 and pages range from 0\~255
+  Method `Handheld.WritePage(data, bank, page)` writes a bytes object of length 0x1000 to some page of the device. Banks range from 0\~1 and pages range from 0\~255.
   
   Method `Handheld.WriteFull(d, output=True)` writes an entire flash dump back to the device. `d` can be either a bytes object or a file name. `output` will make the program print out its progress.
   
