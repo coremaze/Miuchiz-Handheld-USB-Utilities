@@ -23,7 +23,7 @@ These tools do not require non-included Python packages. You can download everyt
 #### `HandheldCore.py` contains the `Handheld` class which deals with all low level interactions with the Miuchiz handheld device.
 
 
-  Classmethod `Handheld.FindHandhelds()` will return a list of drives of all Miuchiz handhelds connected.
+  Classmethod `Handheld.FindHandhelds()` will return a list of valid `Handheld`s connected to the computer.
   
   Method `Handheld.IsHandheld()` determines if the associated drive is a Miuchiz device.
   
