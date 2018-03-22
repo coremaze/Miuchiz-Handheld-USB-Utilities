@@ -49,6 +49,6 @@ Utilities for dealing with the Miuchiz handheld devices over USB
     
  ---
  
- #### `Eject.py` will disconnected the first connected Miuchiz from the computer.
+ #### `Eject.py` will disconnect the first connected Miuchiz from the computer.
  
     Usage: Eject.py 
