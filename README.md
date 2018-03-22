@@ -9,11 +9,11 @@ These tools do not require non-included Python packages. You can download everyt
 
 ---
 
-### Connecting a Miuchiz to a comnputer
+### Connecting a Miuchiz to a computer
 
   A Miuchiz can be connected to the computer in two ways:
   
-  1) Nagivate to the computer room on the handheld and use the computer. The Miuchiz can connect over USB.
+  1) Navigate to the computer room on the handheld and use the computer. The Miuchiz can connect over USB.
   
   2) Hold LEFT and MENU while powering on the device. This will put it into PC mode and it will say "Please Connect to PC" and at that point it can connect over USB
 
