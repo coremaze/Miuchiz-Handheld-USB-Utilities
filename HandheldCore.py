@@ -71,7 +71,8 @@ class Handheld():
             return False
         
         try:
-            data = self._ReadSectors(0, 1)
+            with open(self.drive, 'rb') as d:
+                data = d.read(53)
         except:
             return False
         
