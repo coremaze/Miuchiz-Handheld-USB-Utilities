@@ -5,7 +5,7 @@ Utilities for dealing with the Miuchiz handheld devices over USB
 
 These tools require Python3 to use. https://www.python.org/
 
-These tools do not require additional Python packages. You can download everything here: https://github.com/ChrisMiuchiz/Miuchiz-Handheld-USB-Utilities/archive/master.zip
+These tools do not require non-included Python packages. You can download everything here: https://github.com/ChrisMiuchiz/Miuchiz-Handheld-USB-Utilities/archive/master.zip
 
 ---
 
