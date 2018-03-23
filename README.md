@@ -5,7 +5,9 @@ Utilities for dealing with the Miuchiz handheld devices over USB
 
 These tools require Python3 to use. https://www.python.org/
 
-These tools require pywin32. You can download the tools here: https://github.com/ChrisMiuchiz/Miuchiz-Handheld-USB-Utilities/archive/master.zip
+These tools require pywin32. `pip.exe install pywin32`
+
+You can download the tools here: https://github.com/ChrisMiuchiz/Miuchiz-Handheld-USB-Utilities/archive/master.zip
 
 ---
 
