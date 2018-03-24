@@ -1,5 +1,4 @@
 from HandheldCore import Handheld
-import struct
 
 def UndoHCD(b):
     return sum( [int(hex(e)[2:]) * 100**i for i, e in enumerate(b)])
