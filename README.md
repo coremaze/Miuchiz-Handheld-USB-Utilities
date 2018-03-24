@@ -73,3 +73,9 @@ You can download the tools here: https://github.com/ChrisMiuchiz/Miuchiz-Handhel
  #### `Eject.py` will disconnect the first connected Miuchiz from the computer.
  
     Usage: Eject.py 
+
+ ---
+ 
+ #### `ReadCreditz.py` will print the number of creditz on the Miuchiz.
+ 
+    Usage: ReadCreditz.py 
