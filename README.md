@@ -19,6 +19,11 @@ You can download the tools here: https://github.com/ChrisMiuchiz/Miuchiz-Handhel
   
   2) Hold LEFT and MENU while powering on the device. If the device has batteries, only pressing the RESET button will truly reboot the device. This will put it into PC mode and it will say "Please Connect to PC" and at that point it can connect over USB.
 
+
+### Demo mode
+
+  Sometimes, modifying the flash can cause a handheld to enter demo mode. To exit demo mode, hold DOWN and MENU while powering on the device. If the device has batteries, only pressing the RESET button will truly reboot the device.
+
 ---
 ---
 
