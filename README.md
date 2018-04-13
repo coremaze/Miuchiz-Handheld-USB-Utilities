@@ -62,6 +62,14 @@ You can download the tools here: https://github.com/ChrisMiuchiz/Miuchiz-Handhel
     
  ---
  
+ #### `FastLoad.py` will write an entire flash dump to the first connected Miuchiz, but will maintain a local copy of the handheld's flash. 
+ 
+This is in case you want to frequently test changes to a handheld and don't want to wait for unchanged pages to be written again.
+ 
+    Usage: FastLoad.py <Flash clone file> <Flash load file>'
+    Example: FastLoad.py clonefile.dat writefile.dat
+    
+ ---
  #### `SetCreditz.py` will set the number of creditz on the first connected Miuchiz.
  
     Usage: SetCreditz.py <creditz>
