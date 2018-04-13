@@ -66,7 +66,7 @@ You can download the tools here: https://github.com/ChrisMiuchiz/Miuchiz-Handhel
  
 This is in case you want to frequently test changes to a handheld and don't want to wait for unchanged pages to be written again.
  
-    Usage: FastLoad.py <Flash clone file> <Flash load file>'
+    Usage: FastLoad.py <Flash clone file> <Flash load file>
     Example: FastLoad.py clonefile.dat writefile.dat
     
  ---
