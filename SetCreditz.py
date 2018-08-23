@@ -1,20 +1,21 @@
 from HandheldCore import Handheld
 import sys
+import struct
 
-def HexCodedDecimal(i, size):
-    hexlist = ""
-    while True:
-        hexlist += "%02d " % (i % 100)
-        i = i//100
-        if not i > 0:
-            break
-    hexlist = [int(x, base=16) for x in hexlist[:-1].split(" ")]
-    hexlist = hexlist + ([0]*(size-len(hexlist)))
-    return bytes(hexlist)
+def HexCodedDecimal(i):
+    #Converts, for example, 2500 to 0x2500, and returns as bytes
+    return struct.pack('<I', int(str(i), base=16) )
+    
 
 def main():
     if len(sys.argv) > 2:
         print('USAGE: %s <creditz>' % sys.argv[0])
+        return
+
+    handhelds = Handheld.FindHandhelds()
+
+    if len(handhelds) == 0:
+        print('No handhelds are connected.')
         return
 
     #Allow user to provide creditz during execution
@@ -30,19 +31,12 @@ def main():
         print('Number of creditz needs to be an integer.')
         return
 
-        
-    handhelds = Handheld.FindHandhelds()
-
-    if len(handhelds) == 0:
-        print('No handhelds are connected.')
-        return
-
     #Operate on the first connected handheld
     handheld = handhelds[0]
     
     data = handheld.ReadPage(1, 0xFF)
     
-    creditzhcd = HexCodedDecimal(creditz, 4)
+    creditzhcd = HexCodedDecimal(creditz)
     data = list(data)
     data[0x9AA : 0x9AE] = list(creditzhcd)
     data = bytes(data)
@@ -51,4 +45,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
