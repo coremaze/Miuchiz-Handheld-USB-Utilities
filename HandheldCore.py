@@ -145,3 +145,16 @@ class Handheld():
         self._SendCodeToDrive([0x81, 0, 0, 0, 0])
         data = data[0x2005 : 0x8000]
         return data
+
+    def ReadOTP(self):
+        #When you read from sector 0, it exposes the OTP, repeating, and
+        #beginning at offset 0xBDC in the OTP.
+        OTP_STARTING_OFFSET = 0xBDC
+
+        #OTP is 16KiB, and with 512 bytes per sector, we need 32 sectors.
+        data = self._ReadSectors(0, 32)
+
+        #Put the last 0xBDC bytes at the start to correct OTP
+        data = data[-OTP_STARTING_OFFSET:] + data[:-OTP_STARTING_OFFSET]
+
+        return data
