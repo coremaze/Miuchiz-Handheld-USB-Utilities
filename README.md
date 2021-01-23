@@ -70,6 +70,16 @@ This is in case you want to frequently test changes to a handheld and don't want
     Example: FastLoad.py clonefile.dat writefile.dat
     
  ---
+
+  
+ #### `DumpOTP.py`  will dump the entire OTP of the first connected Miuchiz to a file. 
+ 
+The OTP (**O**ne-**T**ime-**P**rogrammable) is a read-only portion of code responsible for booting the device.
+
+    Usage: DumpOTP.py <file>
+    Example: DumpOTP.py otp.dat
+    
+ ---
  #### `SetCreditz.py` will set the number of creditz on the first connected Miuchiz.
  
     Usage: SetCreditz.py <creditz>
